@@ -1,0 +1,78 @@
+div {
+    margin: auto;
+    width: 45%;
+    float: left;
+    height: 800px;
+    overflow: scroll;
+    border: 1px solid white;
+    background-color: black;
+}
+
+body {
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.cli {
+    color: black);
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    padding: 10%;
+}
+
+img {
+    position: relative;
+    width: 45%;
+    pointer-events: none;
+    transform: rotateZ(calc(var(--demo-scrollTop) * 1deg));
+}
+
+#aa {
+    width: 30px;
+    height: 30px;
+}
+
+#demo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    align-items: space-around;
+}
+
+html {
+    color: black);
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+article {
+    padding-left: 35%;
+}
+
+#shark {
+    width: 150px;
+    height: 150px;
+    right: 20px;
+}
+
+h1,
+h3,
+h2,
+h5 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 130px;
+}
+
+span {
+    float: right;
+}
