@@ -13,11 +13,12 @@
 </head>
 <body>
     <header>
+		 <a id="contact" href="mailto:vachetvirginie.com"> Contactez-moi <img src="image/arrows.gif"/></a>
 <img id="shark"  src="https://conference.awwwards.com/img/shared/shark.gif" />
     <objet id="termynal" data-termynal data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
        
    <h1>Virginie Vachet</h1>
-  
+ 
     
 </objet>
 

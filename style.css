@@ -52,6 +52,20 @@ html {
     font-family: 'Source Code Pro', monospace;
 }
 
+#contact {
+    padding-top: 0px;
+    margin-top: 0px;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 article {
     padding-left: 25%;
     width: 700px;
