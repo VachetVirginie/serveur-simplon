@@ -1,10 +1,5 @@
-<?php
 
-$files = scandir(".");
-$files = array_filter($files,'is_dir');
-$files= array_diff($files, [".", "..", ".git","image"]);
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,7 +59,11 @@ $files= array_diff($files, [".", "..", ".git","image"]);
 
 <article>
     <img id="b" src="image/jeux.png" />
-    
+    <figcaption style="color:white;">
+				<p>Projet jeu </p>
+				<p>Creer un jeu en javascriptt</p>
+				<a href="http://simplonlyon.fr/promo/virginie/Projet3-jeu.js">Take a look</a>
+			</figcaption>
 </article>
 
 <article>
@@ -115,7 +114,13 @@ foreach($files as $dossier){
 }
 echo'</ul>';
 ?>    
-    
+ <?php
+
+$files = scandir(".");
+$files = array_filter($files,'is_dir');
+$files= array_diff($files, [".", "..", ".git","image"]);
+
+?>   
 
 <h3>Contact</h3>
 <i class="fa fa-github" aria-hidden="true"></i>
