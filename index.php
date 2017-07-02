@@ -1,225 +1,236 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://use.fontawesome.com/0df17449bf.js"></script>
- 
-    <title>Document</title>
-</head>
-<body>
-    <header>
-		 <a id="contact" href="mailto:vachetvirginie.com"> Contactez-moi <img src="image/arrows.gif"/></a>
-<img id="shark"  src="https://conference.awwwards.com/img/shared/shark.gif" />
-    <objet id="termynal" data-termynal data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
-       
-   <h1>Virginie Vachet</h1>
- 
-    
-</objet>
-
-
-</header>
-<div data-scrollery id=demo>
-<h2 style="color:white;"> Mes projets: </h2>
-<main>
-<article>
-
-    <img src="image/projet.png" />
-<figcaption style="color:white;">
-				<p>Projet 1</p>
-				<p>Refaire le site "http://paravelinc.com"</p>
-				<a href="http://simplonlyon.fr/promo/virginie/projet-1-Repro-paravelelinc.com/">Take a look</a>
-			</figcaption>
-
-
-</article>
-    <article>
-    <img id="a" src="image/projet2.png" />
-<figcaption style="color:white;">
-				<p>Projet 1 bis</p>
-				<p>Refaire le site "www.thesubways.net"</p>
-				<a href="http://simplonlyon.fr/promo/virginie/thesubways/">Take a look</a>
-			</figcaption>
-
-    
-</article>
-
-<article>
-    <img id="b" src="image/todo.png" />
-   <figcaption style="color:white;">
-				<p>Projet To Do List</p>
-				<p>Creer une To Do List</p>
-				<a href="http://simplonlyon.fr/promo/virginie/todolist-">Take a look</a>
-			</figcaption>
-</article>
-
-<article>
-    <img id="b" src="image/jeux.png" />
-    <figcaption style="color:white;">
-				<p>Projet jeu </p>
-				<p>Creer un jeu en javascriptt</p>
-				<a href="http://simplonlyon.fr/promo/virginie/Projet3-jeu.js">Take a look</a>
-			</figcaption>
-</article>
-
-<article>
-    
-    <img id="b" src="image/jeu2.png" />
-</article>
-
-<article>
-    
-    <img id="b" src="image/jeu3.png" />
-</article>
-<article>
-    
-    <img id="b" src="image/jeu4.png" />
-</article>
-<article>
-    
-    <img id="b" src="image/jeu5.png" />
-</article>
-
-</div>
-<objet id="terminal" data-terminal data-terminal data-ty-typeDelay="40" >
-
-
-<h3>Skills</h3>
-
- <br>
-<h4>Front-end<br></h4>
-<img id="aa" src="image/html.png" />HTML<br>
-<img id="aa" src="image/css.png" />CSS<br>
-<img id="aa" src="image/js.png" />Javascript<br>
-
-<h4>Back-end<br></h4>
-<img id="aa" src="image/php.png" />Php<br>
-<h4>Version Control<br></h4> 
-<img id="aa" src="image/git.png" />Git<br>
-<h3> Mes projets:</h3>
-</objet>
-     <?php
-
-$files = scandir(".");
-echo '<ul>';
-foreach($files as $dossier){
-    if ($dossier!=(".") && $dossier!=(".."))
-    if (is_dir($dossier)){
-       echo '<li><a href="'.$dossier.'">'.$dossier. '</a></li>';
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/0df17449bf.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vachet Virginie
+    </title>
+   <style>
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
 }
-echo'</ul>';
-?>    
- <?php
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
 
-$files = scandir(".");
-$files = array_filter($files,'is_dir');
-$files= array_diff($files, [".", "..", ".git","image"]);
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}
+</style>
+   
+</head>
 
-?>   
+<body>
+    <a name="haut" id="haut"></a>
 
-<h3>Contact</h3>
-<i class="fa fa-github" aria-hidden="true"></i>
-github<br>
-<i class="fa fa-envelope" aria-hidden="true"></i>
-email<br>
-<i class="fa fa-twitter" aria-hidden="true"></i>
-twitter<br>
-<objet>
-<canvas></canvas>
-</objet>
-</objet>
+    <div>
+        <a id="cRetour" class="cInvisible" href="#haut"></a>
+    </div>
+<a name="haut" id="haut"></a>
+ 
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 
 <script>
-let dpr = window.devicePixelRatio,
-	c = document.querySelector( 'canvas' ),
-	ctx = c.getContext( '2d' ),
-	w = 220,
-	h = 220,
-	cx = w / 2,
-	cy = h / 2,
-	orbCount = 200,
-	pathCount = 6,
-	border = 50,
-	orbs = [],
-	tick = 0;
-
-c.style.width = `${w}px`;
-c.style.height = `${h}px`;
-c.width = w * dpr;
-c.height = h * dpr
-ctx.scale( dpr, dpr );
-
-function rand( min, max ) {
-	return Math.random() * ( max - min ) + min;
-};
-
-function dist( x1, y1, x2, y2 ) {
-	let dx = x1 - x2;
-	let dy = y1 - y2;
-	return Math.sqrt( dx * dx + dy * dy );
-};
-
-for( let i = 0; i < orbCount; i++ ) {
-	orbs.push({
-		x: cx,
-		y: cy,
-		vx: 0,
-		vy: 0,
-		a: 0.075,
-		path: []
-	});
-}
-
-function loop() {
-	requestAnimationFrame( loop );
-	ctx.clearRect( 0, 0, w, h );
-	ctx.globalCompositeOperation = 'source-over';
-	ctx.beginPath();
-	ctx.arc( cx, cy, border * ( 1 + Math.sin( tick / 40 ) * 0.15 ), 0 , Math.PI * 2 );
-	ctx.fillStyle = '#fff';
-	ctx.fill();
-	ctx.beginPath();
-	ctx.arc( cx, cy, ( border / 2 ) * ( 1 + Math.cos( tick / 40 ) * 0.15 ), 0 , Math.PI * 2 );
-	ctx.fillStyle = '#000';
-	ctx.fill();	
-	ctx.globalCompositeOperation = 'xor';
-	ctx.beginPath();
-	orbs.forEach( function( orb ) {
-		orb.vx += rand( -orb.a, orb.a );
-		orb.vy += rand( -orb.a, orb.a );
-		if( Math.abs( orb.vx ) > 2 ) { orb.vx *= 0.99; }
-		if( Math.abs( orb.vy ) > 2 ) { orb.vy *= 0.99; }
-		orb.x += orb.vx;
-		orb.y += orb.vy;
-		if( dist( orb.x, orb.y, cx, cy ) >= border ) {
-			orb.vx += ( cx - orb.x ) * 0.001;
-			orb.vy += ( cy - orb.y ) * 0.001;	
-		}
-		orb.path.push( [ orb.x, orb.y ] );
-		if( tick >= pathCount ) {
-			orb.path.shift();	
-		}	
-		ctx.moveTo( orb.x, orb.y );
-		ctx.lineTo( orb.path[ 0 ][ 0 ], orb.path[ 0 ][ 1 ] );
-	});
-	ctx.lineWidth = ( 1 + Math.sin( tick / 20 ) ) * 0.75;
-	ctx.strokeStyle = '#000';
-	ctx.stroke();
-	tick++;
-}
-
-loop();
+document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  };
+});
 </script>
-</main>
-<footer>
-  
-</footer>
-</body>
-</html>
+    
+    <header>
+    <objet id="head">  
 
+
+ 
+      <objet class="header">
+    <svg viewBox="0 0 560 259" class="header-lockup">
+        <text transform="matrix(1 0 0 1 -0.00007 116.14385)"><tspan x="0" y="-12" font-family="'Montserrat'" font-size="80px">Welcome</tspan><tspan x="0" y="80" font-family="'Montserrat'" font-size="80px">Portfolio</tspan></text>
+        <circle fill="yellow" cx="128.50781" cy="126.5" r="30.5"/>
+        <text transform="matrix(1 0 0 1 114.62256 123)">
+          <tspan x="0" y="0" font-family="'Montserrat'" font-size="19px">ON</tspan><tspan x="-4.28906" y="17" font-family="'Montserrat'" font-size="19px">MY</tspan>
+        </text>
+      </svg>
+</objet>
+</objet>
+</header>
+        <div class="port">
+
+            <article id="articleun">
+                <div class="titnum"> <img class="titnum" src="http://www.fransolo.com/imgs/01.svg" <br/>
+
+                    <div class="lefta">
+                        <h2 style="color:black;"> Mes projets: </h2>
+
+
+
+
+                        <figcaption style="color:black;">
+                            <p>Projet 1:</p>
+                            <p>Refaire le site "http://paravelinc.com"</p>
+                            <a style="color:black" href="http://simplonlyon.fr/promo/virginie/projet-1-Repro-paravelelinc.com/"><input class="btn-grad" id="bu-bu" type="button" value="Voir le projet"> </a>
+                        </figcaption>
+
+
+
+
+
+                        <figcaption style="color:black;">
+                            <p>Projet 1 bis</p>
+                            <p>Refaire le site "www.thesubways.net"</p>
+                            <a style="color:black" href="http://simplonlyon.fr/promo/virginie/thesubways/"><input class="btn-grad" id="bu-bu" type="button" value="Voir le projet"> </a>
+                        </figcaption>
+
+
+
+
+
+                        <figcaption style="color:black;">
+                            <p>Projet To Do List</p>
+                            <p>Creer une To Do List</p>
+                            <a style="color:black" href="http://simplonlyon.fr/promo/virginie/todolist-"><input class="btn-grad" id="bu-bu" type="button" value="Voir le projet"> </a>
+                        </figcaption>
+
+
+
+                        <figcaption style="color:black;">
+                            <p>Projet jeu </p>
+                            <p>Creer un jeu en javascriptt</p>
+                            <a href="http://simplonlyon.fr/promo/virginie/Projet3-jeu.js" target="_blank"> <input class="btn-grad" id="bu-bu" type="button" value="Voir le projet"> </a>
+
+                        </figcaption>
+                    </div>
+<h3> Index projets:</h3>
+
+<br>
+</objet>
+
+    <?php
+   $dossier = "./";
+   $files = scandir($dossier);
+   $files = array_diff($files, ['.', '..','images']);
+   foreach($files as $file) {
+       if(is_dir($file)){
+       echo '<li><a href="'.$file.'">' .$file.'</a></li>';
+     
+   }}
+   ?> 
+
+                </div>
+              
+                <div class="workguide"></div>
+
+                <br/>
+
+
+                <div class="righta">
+                    <img class="img" src="image/projet.png" />
+                    <img class="img" src="image/projet2.png" />
+                    <img class="img" src="image/todo.png" />
+                    <img class="img" src="image/jeux.png" />
+
+
+
+                    <img class="img" src="image/jeu2.png" />
+
+
+
+
+
+                    <img class="img" src="image/jeu4.png" />
+
+
+
+
+
+                </div>
+        </div>
+
+        </article>
+
+
+
+        <article id="articledeux">
+            <div id="skills_ap" class="full showed">
+                <div class="centrado">
+                    <div class="left">
+                        <img class="titnum" src="http://www.fransolo.com/imgs/02.svg">
+
+
+                        <br>
+                        <h4>Front-end<br></h4>
+
+                        <br>
+                        <img class="imgs" src="image/html.png" />HTML<br>
+                        <img class="imgs" src="image/css.png" />CSS<br>
+                        <img class="imgs" src="image/js.png" />Javascript<br>
+                        <br>
+                    </div>
+                    <div class="right">
+                        <h4>Back-end<br></h4>
+
+                        <br>
+                        <img class="imgs" src="image/php.png" />Php<br>
+                        <br>
+                        <h4>Version Control<br></h4>
+
+                        <br>
+                        <img class="imgs" src="image/git.png" />Git
+                        <br>
+                    </div>
+                </div>
+        </article>
+
+        <article id="articletrois">
+            <div>
+                <div class="workguide"></div>
+                <img class="titnum" src="http://www.fransolo.com/imgs/03.svg">
+
+                <br>
+                <i class="fa fa-github" aria-hidden="true"></i> github
+                <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> email
+                <br>
+                <i class="fa fa-twitter" aria-hidden="true"></i> twitter
+                <br>
+            </div>
+            <div>
+                <br/>
+                <br/>
+                <a class="twitter-timeline" data-lang="fr" data-width="240" data-height="220" data-link-color="#2B7BB9" href="https://twitter.com/GirlyDev">Tweets by GirlyDev</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <span id="fin"> Made with <i class="fa fa-heartbeat" aria-hidden="true" style="color:yellow;"></i> by Virginie</span>
+        </footer>
+</body>
+
+</html>
