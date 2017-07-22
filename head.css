@@ -1,0 +1,97 @@
+html,
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+#wrap {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#blurb {
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#blurb h1 {
+    color: white;
+}
+
+.line-reveal {
+    width: 120%;
+    height: 3px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.line-reveal.show .overlay {
+    animation: wipe 3s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.line-reveal .overlay {
+    background: black;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    transform-origin: 100% 0;
+}
+
+.line-reveal .line {
+    border: 3px dashed white;
+    backface-visibility: hidden;
+}
+
+#line-a {
+    left: 0;
+    top: 60%;
+    transform-origin: 0 0;
+    transform: rotate(-50deg);
+}
+
+#line-a .line {
+    border-color: #f90;
+}
+
+#line-b {
+    left: 0;
+    bottom: 20%;
+    transform-origin: 0 0;
+    transform: rotate(-5deg);
+}
+
+#line-b .line {
+    border-color: #f09;
+}
+
+#line-c {
+    right: 10%;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: rotate(70deg);
+}
+
+#line-c .line {
+    border-color: #09f;
+}
+
+@keyframes wipe {
+    to {
+        transform: scaleX(0);
+    }
+}

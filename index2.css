@@ -1,0 +1,66 @@
+body {
+    background: black;
+}
+
+.duck {
+    width: 70px;
+    height: 70px;
+    top: 50px;
+    left: 120px;
+    position: absolute;
+    display: none;
+}
+
+.duck2 {
+    width: 70px;
+    height: 70px;
+    top: 70px;
+    left: 190px;
+    position: absolute;
+    display: none;
+}
+
+.duck3 {
+    width: 70px;
+    height: 70px;
+    top: 350px;
+    left: 290px;
+    position: absolute;
+    display: none;
+}
+
+.duck4 {
+    width: 70px;
+    height: 70px;
+    top: 250px;
+    left: 690px;
+    position: absolute;
+    display: none;
+}
+
+#chien {
+    width: 254px;
+    height: 299px;
+    top: 450px;
+    left: 680px;
+    position: absolute;
+    display: none;
+}
+
+#pts {
+    color: black;
+    border: 2px solid black;
+    width: 15%;
+    top: 10px;
+    right: 5px;
+    position: absolute;
+    text-align: center;
+    padding-top: 13px;
+}
+
+#fin {
+    top: 160px;
+    left: 450px;
+    position: absolute;
+    display: none;
+}

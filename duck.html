@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index2.css">
+    <script src="https://use.fontawesome.com/0df17449bf.js"></script>
+    <title>Duck hunt
+
+    </title>
+
+
+
+</head>
+
+<body>
+    <main>
+
+        <img src="https://raw.githubusercontent.com/vaielab/DuckHuntCss/master/stage.png"> </img>
+        <img id="duck" class="duck" src="http://rs273.pbsrc.com/albums/jj224/Vistico/duck_hunt_bird.gif~c200" onclick=style.display='none' ; setTimeout(2000) /> </img>
+
+        <div> <img id="duck2" class="duck2" src="http://rs273.pbsrc.com/albums/jj224/Vistico/duck_hunt_bird.gif~c200 " onclick=style.display='none'> </img>
+            <img id="duck3" class="duck3" src="http://rs273.pbsrc.com/albums/jj224/Vistico/duck_hunt_bird.gif~c200 " onclick=style.display='none'> </img>
+            <img id="duck4" class="duck4" src="http://rs273.pbsrc.com/albums/jj224/Vistico/duck_hunt_bird.gif~c200 " onclick=style.display='none'> </img>
+            <img id="chien" src="https://vignette2.wikia.nocookie.net/super-smash-fanfiction-bros/images/0/09/Duck_Hunt_Dog.png/revision/latest?cb=20140823144926 "> </img>
+            <img id="fin" src="https://cdn.tutsplus.com/gamedev/authors/david-arcila/nintendohard_ghost.jpg">
+            <article id="pts"> 000<br>Score
+                <p id="liveY"><i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    </i>
+
+                </p>
+
+            </article>
+
+    </main>
+</body>
+<script>
+    let canard = {
+        nbcanards: 10,
+        attack: 10,
+        score: 0,
+
+
+    }
+
+
+
+    document.querySelector("#duck").addEventListener('click', function(event) {
+        document.querySelector("#duck").style.display = "none";
+        canard.score += 25;
+        document.querySelector("#pts").textContent = "Score : " + canard.score;
+    })
+    document.querySelector("#duck2").addEventListener('click', function(event) {
+        document.querySelector("#duck2").style.display = "none";
+        canard.score += 25;
+        document.querySelector("#pts").textContent = "Score : " + canard.score;
+    })
+    document.querySelector("#duck3").addEventListener('click', function(event) {
+        document.querySelector("#duck3").style.display = "none";
+        canard.score += 25;
+        document.querySelector("#pts").textContent = "Score : " + canard.score;
+    })
+    document.querySelector("#duck4").addEventListener('click', function(event) {
+        document.querySelector("#duck4").style.display = "none";
+        canard.score += 25;
+        document.querySelector("#pts").textContent = "Score : " + canard.score;
+    })
+
+
+
+    setTimeout(function() {
+        duck.style.display = "block";
+    }, 1000);
+    setTimeout(function() {
+        duck.style.display = "none";
+    }, 4000);
+
+    setTimeout(function() {
+        duck2.style.display = "block";
+    }, 5000);
+    setTimeout(function() {
+        duck2.style.display = "none";
+    }, 8000);
+
+
+
+    setTimeout(function() {
+        duck3.style.display = "block";
+    }, 9000);
+    setTimeout(function() {
+        duck3.style.display = "none";
+    }, 12000);
+
+    setTimeout(function() {
+        duck4.style.display = "block";
+    }, 13000);
+    setTimeout(function() {
+        duck4.style.display = "none";
+    }, 16000);
+    setTimeout(function() {
+        chien.style.display = "block";
+    }, 16500);
+    setTimeout(function() {
+        fin.style.display = "block";
+    }, 16590);
+
+    localStorage.setItem('score', score);
+
+
+    let score = localStorage.getItem('score');
+</script>
+
+</html>

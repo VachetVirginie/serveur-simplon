@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<script>
+    (function($) {
+        // variables
+        elementWidth = $('ul').width(),
+            containerWidth = $('nav').width(),
+            difference = elementWidth - containerWidth,
+            finalWidth = difference * 1.5,
+            element = $('ul');
+
+        // active on click
+        $('li').on('click', function() {
+            $('li').removeClass('active');
+            $(this).addClass('active');
+        });
+
+    })(jQuery);
+</script>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li>About me</li>
+            <li>Portfolio</li>
+
+            <li>Contact me</li>
+            <li class="slide"></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="title"><span>Vachet Virginie</span><span><a target="_blanck" href="">Web Developer</a></span></div>
+    </section>
+    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <section class="section section--portfolio section--left" id="thepepperhill">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#thepepperhill">Projet 1:</a>
+                <p>Handpicked kampot pepper from Kambodscha. Design, frontend and Shopify integration.</p>
+                <a href="http://thepepperhill.com" class="link">thepepperhill.com</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="image/projet1.png" alt="The Pepper Hill">
+        </div>
+    </section>
+
+    <section class="section section--portfolio section--documenta" id="documenta">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#documenta">Projet 1 bis:</a>
+                <p>Kassel outdoor artworks from past documenta exhibitions. Concept, part design, frontend and backend integration.</p>
+                <a href="http://documenta-historie.de" class="link">documenta-historie.de</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="image/projet2b.png" alt="documenta-historie.de">
+        </div>
+    </section>
+    <section class="section section--portfolio section--left" id="thepepperhill">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#thepepperhill">Projet 2:</a>
+                <p>Handpicked kampot pepper from Kambodscha. Design, frontend and Shopify integration.</p>
+                <a href="http://thepepperhill.com" class="link">thepepperhill.com</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="image/todo.png" alt="The Pepper Hill">
+        </div>
+    </section>
+    <section class="section section--portfolio section--documenta" id="documenta">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#documenta">Projet 3:</a>
+                <p>Kassel outdoor artworks from past documenta exhibitions. Concept, part design, frontend and backend integration.</p>
+                <a href="http://documenta-historie.de" class="link">documenta-historie.de</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="image/jeu2.png" alt="documenta-historie.de">
+        </div>
+    </section>
+    <section class="section section--portfolio section--left" id="thepepperhill">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#thepepperhill">Projet 4:</a>
+                <p>Handpicked kampot pepper from Kambodscha. Design, frontend and Shopify integration.</p>
+                <a href="http://thepepperhill.com" class="link">thepepperhill.com</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="1.jpg" alt="The Pepper Hill">
+        </div>
+    </section>
+    <section class="section section--portfolio section--documenta" id="documenta">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#documenta">Projet 5:</a>
+                <p>Kassel outdoor artworks from past documenta exhibitions. Concept, part design, frontend and backend integration.</p>
+                <a href="http://documenta-historie.de" class="link">documenta-historie.de</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="2.png" alt="documenta-historie.de">
+        </div>
+    </section>
+    <section class="section section--portfolio section--left" id="thepepperhill">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#thepepperhill">Projet 6:</a>
+                <p>Handpicked kampot pepper from Kambodscha. Design, frontend and Shopify integration.</p>
+                <a href="http://thepepperhill.com" class="link">thepepperhill.com</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="mpu.png" alt="The Pepper Hill">
+        </div>
+    </section>
+    <section class="section section--portfolio section--documenta" id="documenta">
+
+        <div class="section__inner">
+            <div class="portfolio-description">
+                <a class="pre" href="#documenta">Projet 7:</a>
+                <p>Kassel outdoor artworks from past documenta exhibitions. Concept, part design, frontend and backend integration.</p>
+                <a href="http://documenta-historie.de" class="link">documenta-historie.de</a>
+            </div>
+
+            <img style="width: 600px;
+      height: 400px;" src="blog.png" alt="documenta-historie.de">
+        </div>
+    </section>
+</body>
+
+</html>

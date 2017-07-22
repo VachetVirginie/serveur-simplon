@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="head.css">
+    <title>Document</title>
+</head>
+<script>
+    let lines = document.querySelectorAll('.line-reveal');
+
+    for (let i = 0; i < lines.length; i++) {
+
+        (function(line, time) {
+            setTimeout(function() {
+                line.classList.add('show');
+            }, time);
+        })(lines[i], i * 500);
+
+    }
+</script>
+
+<body>
+
+
+    <div id="wrap">
+
+        <div id="blurb">
+            <h1>Kevin Marous</h1>
+            <p>Develloper Web.</p>
+        </div>
+
+        <div class="line-reveal" id="line-a">
+            <div class="overlay"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="line-reveal" id="line-b">
+            <div class="overlay"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="line-reveal" id="line-c">
+            <div class="overlay"></div>
+            <div class="line"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

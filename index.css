@@ -1,0 +1,284 @@
+body {
+    background-color: black;
+}
+
+.fond {
+    width: 532px;
+    height: 399px;
+}
+
+.tv {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-left: 200px;
+}
+
+header {
+    width: 30px;
+    height: 30px;
+}
+
+table {
+    width: 25%;
+    padding: 4%;
+}
+
+.cleareur {
+    padding-top: 360px;
+    color: transparent;
+    background: transparent;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 19px;
+    margin: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    opacity: 0.95;
+}
+
+th {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+h1 {
+    color: wheat;
+    text-align: center;
+}
+
+h2 {
+    color: wheat;
+    text-align: center;
+    top: 130px;
+    left: 40%;
+    position: absolute;
+}
+
+.oldtv {
+    top: 130px;
+    right: 30%;
+    position: absolute;
+    background-image: url("http://solenejaillard.com/wp-content/uploads/2012/04/55d0b3dbb20ba3ecc439714e098465ff.gif"), relative;
+}
+
+.manprem {
+    text-align: center;
+    margin-left: 450px;
+}
+
+.champ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#test {
+    animation: Test 3s infinite;
+    top: 120px;
+}
+
+@keyframes Test {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rondA {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin-top: 107px;
+    margin-left: -55px;
+    position: absolute;
+}
+
+.rondA2 {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin-top: 107px;
+    margin-left: -55px;
+    position: absolute;
+}
+
+.rondB {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin-top: 107px;
+    margin-left: -103px;
+    position: absolute;
+}
+
+.mancha {
+    top: 40px;
+}
+
+.nuage {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 650px;
+}
+
+.fee {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 420px;
+    width: 102px;
+    height: 144px;
+    animation: Test 3s infinite;
+}
+
+.rondB2 {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin-top: 107px;
+    margin-left: -103px;
+    position: absolute;
+}
+
+.perso1 {
+    height: 150px;
+    width: 100px;
+    left: 410px;
+    top: 130px;
+    position: absolute;
+}
+
+.button1 {
+    height: 10px;
+    width: 29px;
+    margin-top: 118px;
+    margin-left: -174px;
+    position: absolute;
+    background: rgb(59, 59, 59);
+}
+
+.button2 {
+    height: 10px;
+    width: 29px;
+    margin-top: 117px;
+    margin-left: -221px;
+    position: absolute;
+    background: rgb(59, 59, 59);
+}
+
+.perso2 {
+    height: 100px;
+    width: 80px;
+    right: 515px;
+    top: 156px;
+    position: absolute;
+}
+
+#barre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
+
+.fa {
+    color: red;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+#man {
+    margin-left: 21%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 3px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+#Link {
+    float: right;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 120px;
+    height: 549px;
+    background-image: url("http://solenejaillard.com/wp-content/uploads/2012/04/55d0b3dbb20ba3ecc439714e098465ff.gif");
+}
+
+#Yoshi {
+    float: left;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 120px;
+    height: 549px;
+    background-image: url("http://solenejaillard.com/wp-content/uploads/2012/04/55d0b3dbb20ba3ecc439714e098465ff.gif");
+}
+
+.yosh {
+    width: 128px;
+    height: 128px;
+}
+
+.linki {
+    width: 128px;
+    height: 128px;
+}
+
+span {
+    color: wheat;
+}
+
+.nuage {
+    position: absolute;
+}
+
+.player1 {
+    float: left;
+}
+
+.player2 {
+    float: right;
+    margin-left: 630px;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    position: center;
+}
+
+.yosh {
+    width: 100px;
+    height: 120px
+}
+
+.tvv {
+    display: flex;
+}

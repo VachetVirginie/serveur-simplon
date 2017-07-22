@@ -1,3 +1,245 @@
+<<<<<<< HEAD
+    div {
+        width: 50%;
+        float: left;
+        height: 800px;
+        overflow: scroll;
+        border: 1px solid white;
+        background-color: black;
+        margin: 2%;
+    }
+    
+    body {
+        background-color: white;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .cli {
+        color: black;
+        text-decoration: none;
+    }
+    
+    header {
+        background-color: white;
+        padding: 15%;
+        margin: 2%;
+    }
+    
+    img {
+        position: relative;
+        width: 45%;
+        pointer-events: none;
+        transform: rotateZ(calc(var(--demo-scrollTop) * 1deg));
+    }
+    
+    #aa {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #demo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        align-items: space-around;
+    }
+    
+    html {
+        color: black);
+        font-family: 'Source Code Pro', monospace;
+        max-width: 100%;
+    }
+    
+    #contact {
+        float: right;
+        position: absolute;
+        top: 3%;
+        right: 0%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    article {
+        padding-left: 25%;
+        width: 65%;
+    }
+    
+    .iconBrand {
+        position: fixed;
+        top: 3%;
+        right: 2%;
+        width: 100px;
+        opacity: 0.5;
+    }
+    
+    h1,
+    h3,
+    h2,
+    h5 {
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 130px;
+    }
+    
+    span {
+        float: right;
+    }
+    
+    data-termynal {
+        width: 750px;
+        max-width: 100%;
+        font-size: 18px;
+        font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    }
+    
+    [data-termynal]:before {
+        content: '';
+        position: absolute;
+        top: 8%;
+        left: 3%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        /* A little hack to display the window buttons in one pseudo element. */
+        background: #d9515d;
+        -webkit-box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+        box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+    }
+    
+    body {
+        --color-bg: #ddd;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    [data-terminal] {
+        width: 45%;
+        max-width: 50%;
+        color: var(--color-text);
+        font-size: 18px;
+        border-radius: 4px;
+        position: relative;
+    }
+    
+    [data-terminal]:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        /* A little hack to display the window buttons in one pseudo element. */
+        background: #d9515d;
+        -webkit-box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+        box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Mallanna|Text+Me+One');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+    @import url(https://fonts.googleapis.com/css?family=Squada+One);
+    body {
+        background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+    }
+    
+    #logo {
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 150px;
+        font-weight: 800;
+        letter-spacing: -3px;
+        line-height: 1;
+        text-shadow: #EDEDED 3px 2px 0;
+        position: relative;
+        right: 35%;
+        width: 100%;
+    }
+    
+    #logo:after {
+        /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+        background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+        background-size: 4px 4px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -5;
+        display: block;
+        text-shadow: none;
+    }
+    
+    #menu {
+        height: 42px;
+        list-style: none;
+        margin: 10px 0 0 0;
+        padding: 25px 10px;
+        border-top: 4px double #AAA;
+        border-bottom: 4px double #AAA;
+        position: relative;
+        text-align: center;
+    }
+    
+    .btn-grad {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+    }
+    
+    .btn-grad:hover {
+        background-position: right center;
+    }
+    
+    #img {
+        width: 5%;
+        padding-left: 19%;
+    }
+    
+    .tdimension {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto 40px auto;
+        perspective: 1000px;
+    }
+    
+    .tdimension a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/e8346826957515.56361c2106f3f.png");
+        background-size: cover;
+        transform-style: preserve-3d;
+        transform: rotateX(70deg);
+        transition: all 0.8s;
+    }
+    
+    .tdimension:hover a {
+        transform: rotateX(20deg);
+    }
+    
+    .tdimension a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+=======
 #articleun {
     position: relative;
     background-color: #fbf232;
@@ -165,3 +407,4 @@ footer {
     padding: 0px;
     margin: 10px;
 }
+>>>>>>> 843d8113bf2825971964ca08b276ee0bf26a4d1a

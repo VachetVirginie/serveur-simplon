@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/0df17449bf.js"></script>
+    <title>Yoshi vs Link
+
+    </title>
+
+
+
+</head>
+
+<body>
+
+
+    <header> </header>
+    <div id="Yoshi">
+        <div id="test">
+            <h3>Player1 </h3>
+        </div>
+        <img class="yosh" src="http://vignette2.wikia.nocookie.net/nickfanon/images/d/d9/Yoshi-.png/revision/latest?cb=20111116153456" />
+        <h3> Yoshi </h3>
+        <p style="color:red"> Life </p>
+
+        <p id="liveY"><i class="fa fa-heartbeat" aria-hidden="true"></i> 100
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+
+        </p>
+        <p>Boutton A: Attaque(-25pts)<i class="fa fa-shield" aria-hidden="true"></i>
+        </p>
+        <p>Boutton B: Potion(+15pts)<i class="fa fa-flask" aria-hidden="true"></i>
+        </p>
+        <p class="ptsY"> Points:0</p>
+    </div>
+    <div id="Link">
+        <div id="test">
+            <h3>Player2 </h3>
+        </div>
+        <img class="linki" src="http://orig14.deviantart.net/e47b/f/2014/102/b/b/toon_link_by_kyodashiro-d7e668n.png" />
+        <h3> Link </h3>
+        <p style="color:red"> Life </p>
+
+        <p id="liveL"> <i class="fa fa-heartbeat" aria-hidden="true"></i> 100
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+
+        </p>
+        </p>
+
+        <p>Boutton A: Attaque(-25pts)<i class="fa fa-shield" aria-hidden="true"></i>
+        </p>
+        <p> Boutton B: Potion(+15pts)<i class="fa fa-flask" aria-hidden="true"></i>
+        </p>
+        <p class="ptsL"> Points:0</p>
+    </div>
+    <section>
+        <main>
+            <div class="tv">
+
+                <article>
+
+                    <div>
+
+                        <img class="fond" src="http://hdd1.service-webmaster.fr/media/reel/jeux_videos/mario/mario-83-mario-jeux-video.jpg" />
+
+                        <img class="perso1" src="https://vignette2.wikia.nocookie.net/geosworld/images/b/b5/MP6_Yoshi.png/revision/latest?cb=20131004012321" />
+
+                        <img class="nuage" src="http://www.icone-gif.com/gif/meteo/nuages/nuages001.gif" />
+
+                        <img class="perso2 " src="http://www.pngmart.com/files/2/Zelda-Link-PNG-Transparent.png " />
+                        <img class="fee" src="http://i.imgur.com/aSo8Euz.gif" />
+                        <i </div>
+                </article>
+
+
+    </section>
+
+
+    </article>
+    </main>
+    <footer>
+
+        <section id="man">
+
+            <br>
+            <img id="nes" src="http://www.jeuxactu.com/datas/divers/d/i/divers-jeux-video/vn/divers-jeux-video-5149e92d141f1.jpg " /a>
+            </img>
+            <input type="button" class="rondA"></input>
+            <input type="button" class="rondB"></input>
+            <button class="button1"> </button>
+            <button class="button2"> </button>
+
+
+
+            <img id="nes" src="http://www.jeuxactu.com/datas/divers/d/i/divers-jeux-video/vn/divers-jeux-video-5149e92d141f1.jpg " /a>
+            </img>
+            <input type="button" class="rondA2"></input>
+            <input type="button" class="rondB2"></input>
+            <button class="button1"> </button>
+            <button class="button2"> </button>
+
+
+        </section>
+    </footer>
+    <script>
+        "use strict";
+        let yoshi = {
+            hp: 100,
+            attack: 25,
+            def: 5,
+            pts: 0,
+        };
+        let link = {
+            hp: 100,
+            attack: 25,
+            def: 5,
+            pts: 0,
+        };
+        document.querySelector(".rondA2").addEventListener("click", function() {
+            let fee = document.querySelector(".fee");
+            fee.style.display = "block";
+            setTimeout(function() {
+                fee.style.display = "none";
+            }, 3000);
+
+
+            yoshi.hp = yoshi.hp - 25;
+
+            yoshi.pts = yoshi.pts + 1;
+
+
+            if (yoshi.hp <= 0) {
+                window.location.href = "chargement2.html"
+                yoshi.hp = 0;
+            }
+
+            display();
+        });
+
+        document.querySelector(".rondB").addEventListener("click", function() {
+            yoshi.hp = yoshi.hp + 15;
+
+            if (yoshi.hp <= 0) {
+                window.location.href = "chargement2.html"
+                yoshi.hp = 0;
+            }
+
+            display();
+        });
+
+        document.querySelector(".rondB2").addEventListener("click", function() {
+            link.hp = link.hp + 15;
+            yoshi.pts = yoshi.pts + 1;
+            if (link.hp <= 0) {
+               window.location.href = "chargement2.html"
+                link.hp = 0;
+            }
+
+
+            display();
+        });
+
+        document.querySelector(".rondA").addEventListener("click", function() {
+            let nuage = document.querySelector(".nuage");
+            nuage.style.display = "block";
+            setTimeout(function() {
+                nuage.style.display = "none";
+            }, 3000);
+
+
+
+
+            link.hp = link.hp - 25;
+            if (link.hp <= 0) {
+                window.location.href = "chargement2.html"
+                link.hp = 0;
+            }
+            display();
+        });
+        let display = function() {
+            // change documeny here
+            document.querySelector("#liveY").textContent = yoshi.hp;
+            document.querySelector("#liveL").textContent = link.hp;
+            document.querySelector("#ptsY").textContent = yoshi.pts;
+        };
+        let attaque = function() {
+
+            }
+            // setInterval(function() {
+            //   alert("fin du round")
+            // }, 10000);
+    </script>
+</body>
+
+</html>
